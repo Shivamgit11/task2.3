@@ -22,20 +22,35 @@
 //-------------------------------------GETELEMENTSBYID----------------------//
 
 // console.log(document.getElementById('header-title'));
-var headertitle = document.getElementById('header-title');
-var header = document.getElementById("main-header");
+// var headertitle = document.getElementById('header-title');
+// var header = document.getElementById("main-header");
 
-console.log(headertitle);
+// console.log(headertitle);
 // headertitle.textContent = 'Hello';
 // headertitle.innerText = 'Goodbye';
 
 //
 // headertitle.innerHTML = '<h3>Hello</h3>'
 
-// Style====----------------------------------->>>>>>>>>>>>>>>>>>>>>>
-header.style.borderBottom = 'solid 3px black';
+// // Style====----------------------------------->>>>>>>>>>>>>>>>>>>>>>
+// header.style.borderBottom = 'solid 3px black';
 
-var itemssss = document.getElementById('main');
-itemssss.style.color = 'green';
+// var itemssss = document.getElementById('main');
+// itemssss.style.color = 'green';
 
 
+//    GETELEMENTSBYCLASSNAME------------------->>>>>>>>>>>>>>>>>>
+
+
+var itemss = document.getElementsByClassName('list-group-item');
+console.log(itemss);
+console.log(itemss[1]);
+itemss[1].textContent = 'Hello 2';
+itemss[1].style.fontWeight = 'bold';
+itemss[2].style.backgroundColor = 'green';
+
+
+for(var i =0;i<itemss.length;i++)
+{
+    itemss[i].style.fontWeight = 'bold'
+}
