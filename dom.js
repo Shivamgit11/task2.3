@@ -42,15 +42,32 @@
 //    GETELEMENTSBYCLASSNAME------------------->>>>>>>>>>>>>>>>>>
 
 
-var itemss = document.getElementsByClassName('list-group-item');
-console.log(itemss);
-console.log(itemss[1]);
-itemss[1].textContent = 'Hello 2';
-itemss[1].style.fontWeight = 'bold';
-itemss[2].style.backgroundColor = 'green';
+// var itemss = document.getElementsByClassName('list-group-item');
+// console.log(itemss);
+// console.log(itemss[1]);
+// itemss[1].textContent = 'Hello 2';
+// itemss[1].style.fontWeight = 'bold';
+// itemss[2].style.backgroundColor = 'green';
 
 
-for(var i =0;i<itemss.length;i++)
+// for(var i =0;i<itemss.length;i++)
+// {
+//     itemss[i].style.fontWeight = 'bold'
+// }
+
+
+// GETELEMENTSBYTAGNAME---------------->>>>>>>
+
+
+
+var li = document.getElementsByTagName('li');
+console.log(li);
+console.log(li[1]);
+li[1].textContent = 'Hello 2';
+li[1].style.fontWeight = 'bold';
+li[2].style.backgroundColor = 'green';
+
+for(var i =0;i<li.length;i++)
 {
-    itemss[i].style.fontWeight = 'bold'
+    li[i].style.backgroundColor = 'yellow';
 }
