@@ -1,6 +1,6 @@
 //    Traversing the dom      //
 
-var itemList = document.querySelector('#items');
+// var itemList = document.querySelector('#items');
 
 // parentNode 
 // console.log(itemList.parentNode);
@@ -56,33 +56,51 @@ var itemList = document.querySelector('#items');
 
 //        Create a div
 
-var newdiv = document.createElement('div');
+// var newdiv = document.createElement('div');
 
 //Add class 
-newdiv.className = 'hellow';
+// newdiv.className = 'hellow';
 
 // Add id 
-newdiv.id = 'hello1';
+// newdiv.id = 'hello1';
 
 //Add attributes
-newdiv.setAttribute('title','Hello Div');
+// newdiv.setAttribute('title','Hello Div');
 
 // Create a text Node
-var newdivText = document.createTextNode('Hellow world');
+// var newdivText = document.createTextNode('Hellow world');
 
 //  Add text to div 
-newdiv.appendChild(newdivText);
+// newdiv.appendChild(newdivText);
 
-var container = document.querySelector('header .container');
-var h1 = document.querySelector('header h1');
+// var container = document.querySelector('header .container');
+// var h1 = document.querySelector('header h1');
 
-console.log(newdiv);
+// console.log(newdiv);
 
-newdiv.style.fontSize = '25px'
+// newdiv.style.fontSize = '25px'
 
-container.insertBefore(newdiv, h1);
+// container.insertBefore(newdiv, h1);
 
-var itelelem = document.querySelector('li .list-group-item');
-var i1 = document.querySelector('list-group-item l1');
-container.insertBefore(newdiv, i1);
+// var itelelem = document.querySelector('li .list-group-item');
+// var i1 = document.querySelector('list-group-item li');
+// container.insertBefore(newdiv, i1);
 
+
+var filter = document.getElementById('filter');
+
+// Filter Event
+filter.addEventListener('keyup', filterItems);
+
+//filterItem
+function filterItem(){
+    // convert text to lowercase
+    var text = e.target.value.toLowerCase();
+    //getlist
+    var items = ItemList.getElementsByTagName();
+    // Convert to an array
+    Array.from(items).forEach(function(item){
+        var ItemName = item.firstChild.textContent;
+        console.log(ItemName);
+    })
+}
