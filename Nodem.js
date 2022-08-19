@@ -101,6 +101,10 @@ function filterItem(){
     // Convert to an array
     Array.from(items).forEach(function(item){
         var ItemName = item.firstChild.textContent;
-        console.log(ItemName);
-    })
+        if(ItemName.toLowerCase(text) != -1){
+                item.style.display = 'block';
+        }else {
+            item.style.display = 'none';
+        }
+    });
 }
